@@ -4,14 +4,28 @@ class Program
 {
     static void Main()
     {
-        int numero;
+        double valor, soma = 0, media;
 
-        Console.Write("Informe o número da tabuada: ");
-        numero = Convert.ToInt32(Console.ReadLine());
-
-        for (int i = 1; i <= 10; i++)
+        for (int i = 1; i <= 5; i++)
         {
-            Console.WriteLine(numero + " x " + i + " = " + (numero * i));
+            if (i == 1)
+                Console.Write("Informe o primeiro valor: ");
+            else if (i == 2)
+                Console.Write("Informe o segundo valor: ");
+            else if (i == 3)
+                Console.Write("Informe o terceiro valor: ");
+            else if (i == 4)
+                Console.Write("Informe o quarto valor: ");
+            else
+                Console.Write("Informe o quinto valor: ");
+
+            valor = Convert.ToDouble(Console.ReadLine());
+            soma += valor;
         }
+
+        media = soma / 5;
+
+        Console.WriteLine("Soma dos valores: " + soma);
+        Console.WriteLine("Média dos valores: " + media);
     }
 }
