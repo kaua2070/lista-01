@@ -1,21 +1,20 @@
-﻿int idade;
+﻿ int numero1, numero2;
 
-        Console.Write("Informe a idade: ");
-        idade = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Informe o primeiro número: ");
+        numero1 = Convert.ToInt32(Console.ReadLine());
 
-        if (idade >= 0 && idade <= 11)
+        Console.Write("Informe o segundo número: ");
+        numero2 = Convert.ToInt32(Console.ReadLine());
+
+        if (numero1 > numero2)
         {
-            Console.WriteLine("Faixa etária: criança.");
+            Console.WriteLine("O primeiro número é maior.");
         }
-        else if (idade >= 12 && idade <= 17)
+        else if (numero2 > numero1)
         {
-            Console.WriteLine("Faixa etária: adolescente.");
-        }
-        else if (idade >= 18 && idade <= 59)
-        {
-            Console.WriteLine("Faixa etária: adulto.");
+            Console.WriteLine("O segundo número é maior.");
         }
         else
         {
-            Console.WriteLine("Faixa etária: idoso.");
+            Console.WriteLine("Os números são iguais.");
         }
