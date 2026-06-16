@@ -6,14 +6,12 @@ class Program
     {
         int numero;
 
-        Console.Write("Informe o número inicial da contagem regressiva: ");
+        Console.Write("Informe o número da tabuada: ");
         numero = Convert.ToInt32(Console.ReadLine());
 
-        for (int i = numero; i >= 0; i--)
+        for (int i = 1; i <= 10; i++)
         {
-            Console.WriteLine(i);
+            Console.WriteLine(numero + " x " + i + " = " + (numero * i));
         }
-
-        Console.WriteLine("Fim da contagem.");
     }
 }
